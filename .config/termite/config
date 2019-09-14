@@ -1,8 +1,5 @@
 [options]
-# font = Monospace 12
-# font = Terminus 12
-font = Droid Sans Mono 13
-# Solarized dark color scheme
+font = Hack 13
 
 [colors]
 foreground = #839496
