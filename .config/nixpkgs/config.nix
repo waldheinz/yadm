@@ -1,6 +1,8 @@
 with import <nixpkgs> {};
 
 {
+    allowUnfree = true;
+
     packageOverrides = pkgs_: with pkgs_; {
         myNeovim = neovim.override {
             configure = {
@@ -15,6 +17,7 @@ with import <nixpkgs> {};
                         vim-airline-themes
                         vim-colors-solarized
                         vim-gitgutter
+                        vimproc-vim
                     ];
                     opt = [ ];
                 };
@@ -24,7 +27,8 @@ with import <nixpkgs> {};
         all = with pkgs; buildEnv {
             name = "all";
             paths = [
-		        myNeovim
+                myNeovim
+                nodePackages.typescript
             ];
         };
     };
