@@ -27,6 +27,13 @@ with import <nixpkgs> {};
         myVscode = vscode-with-extensions.override {
             vscodeExtensions = vscode-utils.extensionsFromVscodeMarketplace [
                 {
+                    name = "gitblame";
+                    publisher = "waderyan";
+                    version = "3.0.1";
+                    sha256 = "1h68fzm9glv7gqwbi15sk6iw45kp9r08wrv2vd6lwi45srriwgjp";
+                }
+
+                {
                     name = "shellcheck";
                     publisher = "timonwong";
                     version = "0.8.1";
