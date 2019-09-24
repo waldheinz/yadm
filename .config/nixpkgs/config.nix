@@ -41,6 +41,13 @@ with import <nixpkgs> {};
                 }
 
                 {
+                    name = "vscode-typescript-tslint-plugin";
+                    publisher = "ms-vscode";
+                    version = "1.2.2";
+                    sha256 = "1n2yv37ljaadp84iipv7czzs32dbs4q2vmb98l3z0aan5w2g8x3z";
+                }
+
+                {
                     name = "Nix";
                     publisher = "bbenoist";
                     version = "1.0.1";
